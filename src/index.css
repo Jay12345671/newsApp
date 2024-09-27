@@ -1,0 +1,313 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightblue;
+  padding: 9px;
+}
+nav input{
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+nav button{
+  width: 70px;
+  height: 38px;
+  background-color: blue;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  gap: 11px;
+
+}
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  gap:41px;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  width: 320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.card img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+.card .title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+.card .title:hover{
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.card .content{
+  padding: 9px;
+}
+.card button{
+  background-color: rgb(29, 162, 214);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.categoryBtn{
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+}
+.categoryBtn button{
+  gap: 11px;
+  width: 130px;
+  height: 33px;
+  background-color: rgb(255, 108, 108);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+}
+
+
+.head{
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+}
+ */
+
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing on all screens */
+  background-color: rgb(12, 84, 102);
+  padding: 1px 20px;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+nav input {
+  width: 60%;
+  max-width: 300px; /* Makes the search bar responsive */
+  padding: 7px;
+  font-size: 20px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 8px; /* Adds margin for smaller screens */
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensures search bar items wrap on small screens */
+}
+
+nav button {
+  width: 100px;
+  height: 39px;
+  background-color: rgb(228, 17, 38);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 23px;
+  color: rgb(251, 248, 248);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures cards are responsive */
+  padding: 20px; /* Adds padding for better spacing */
+}
+
+.card {
+  width: 100%;
+  max-width: 320px; /* Ensures the card doesn't exceed a certain width */
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: #f5f1f1;
+  border-radius: 3px;
+  margin-top: 20px;
+  border: 1px solid rgb(236, 236, 236);
+  flex-grow: 1; /* Allows the card to grow within the container */
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Ensures the image is responsive */
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+
+.card .title:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+.card button {
+  background-color: rgb(29, 162, 214);
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.categoryBtn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Makes the buttons responsive */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.categoryBtn button {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(255, 108, 108);
+  border: none;
+  font-size: 16px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Headline styling */
+.head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .searchBar {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav button {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    flex-direction: column; /* Stacks the cards vertically */
+  }
+
+  .card {
+    width: 100%; /* Full width for small screens */
+    margin: 0 auto;
+  }
+
+  nav input {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .categoryBtn button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
